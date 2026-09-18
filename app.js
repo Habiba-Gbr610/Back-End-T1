@@ -26,11 +26,11 @@ function getPersonData() {
                     rl.question('Enter City: ', (city) => {
                         currentPerson.city = city;
                         
-                        // حفظ النسخة في المصفوفة
+                      
                         people.push({ ...currentPerson });
                         currentPerson = {};
                         
-                        getPersonData(); // تكرار لحد ما يكملوا
+                        getPersonData(); 
                     });
                 });
             });
